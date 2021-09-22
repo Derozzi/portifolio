@@ -36,9 +36,10 @@ html {
 body {
     font-size: 1.6rem; /* resetando pro valor padrao, só que relativo. */
     margin: 0;
-    background-color: var(--cor01);
     font-family: var(--font-paragrafos);
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 html,
 body {
@@ -70,6 +71,7 @@ p {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+
     
     width: 90%;
     max-width: 1500px;
@@ -80,6 +82,7 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
 
     width: 90%;
     max-width: 980px;
@@ -153,7 +156,7 @@ p {
 
 .conteudo-principal {
     background-color: var(--cor-background);
-    
+    flex-grow: 1; /*Main preenche o vazio entre body e footer*/
 }
 
 
@@ -204,10 +207,11 @@ p {
 
 .competencias {
     font-size: 1.6rem;
-    /* padding: 6.8125em; */
+    padding: 1.875em;
 }
 .competencias h1 {
     font-size: 3rem;
+    margin-top: 0.625em;
     color: var(--cor01);
 }
 .competencias p {
@@ -234,6 +238,7 @@ p {
     font-size: 1.6rem;
     position: sticky;
     top: 100%;
+    padding: 1.875em;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.199), rgb(197, 197, 197));
 }
 .rodape h1 {
