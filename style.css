@@ -31,16 +31,17 @@
 }
 html {
     font-size: 62.5%; /* equivale a 10px*/
+    height: 100%; /* para config. rodapé */
 }
 body {
     font-size: 1.6rem; /* resetando pro valor padrao, só que relativo. */
     margin: 0;
     background-color: var(--cor01);
     font-family: var(--font-paragrafos);
+    min-height: 100%;
 }
 html,
 body {
-    height: 100vh;
     background-color: white;
 }
 
@@ -197,15 +198,13 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     max-width: 150rem;
-
     margin: auto;
 }
 
 .competencias {
     font-size: 1.6rem;
-    padding: 6.25em;
+    /* padding: 6.8125em; */
 }
 .competencias h1 {
     font-size: 3rem;
@@ -233,11 +232,13 @@ p {
 }
 .rodape {
     font-size: 1.6rem;
+    position: sticky;
+    top: 100%;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.199), rgb(197, 197, 197));
 }
 .rodape h1 {
     font-size: 3rem;
-}
+} 
 .rodape ul {
     list-style: none;
 
